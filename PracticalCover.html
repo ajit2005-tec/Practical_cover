@@ -117,7 +117,7 @@ function Form({f,set,showOpt,setShowOpt,tpl,setTpl,reset}){
     h("label",{className:"tog"},h("input",{type:"checkbox",checked:showOpt,onChange:e=>setShowOpt(e.target.checked)}),"Show optional fields"),
     h("fieldset",null,h("legend",null,"Institution"),F("University / Institution","uni","University name"),F("College / Campus","campus","e.g. Bhubaneswar"),F("Department","dept","Department / School"),F("Academic session","session","e.g. 2026–27")),
     h("fieldset",null,h("legend",null,"Course"),h("div",{className:"row"},h(Pick,{label:"Course",k:"course",c:"courseC",opts:COURSES,f,set,ph:"e.g. B.Pharm"}),h(Pick,{label:"Semester",k:"sem",c:"semC",opts:SEMS,f,set,ph:"e.g. 3rd Semester"})),h(Pick,{label:"Branch",k:"branch",c:"branchC",opts:BRANCHES,f,set,ph:"Your branch"})),
-    h("fieldset",null,h("legend",null,"Student"),F("Student name","name","Full name"),h("div",{className:"row"},F("Registration no.","regd","e.g. 26120026"),F("Roll no.","roll","Roll number")),h("div",{className:"row"},F("Section","section","e.g. A"),F("Group","group","e.g. A-2")),F("Sub-group","sub","e.g. A-2")),
+    h("fieldset",null,h("legend",null,"Student"),F("Student name","name","Full name"),h("div",{className:"row"},F("Registration no.","regd","e.g. 00000026"),F("Roll no.","roll","Roll number")),h("div",{className:"row"},F("Section","section","e.g. A"),F("Group","group","e.g. A-2")),F("Sub-group","sub","e.g. A-2")),
     h("fieldset",null,h("legend",null,"Practical"),F("Subject / Laboratory","subject","e.g. Object Oriented Programming Lab"),h("div",{className:"row"},F("Subject code","code","e.g. CS2508"),F("Submitted to","faculty","Faculty name"))),
     h("button",{type:"button",className:"btn ghost",onClick:reset},"Reset fields"));
 }
